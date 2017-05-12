@@ -1,0 +1,22 @@
+{
+  "name": "vue-hello",
+  "version": "1.0.0",
+  "description": "Learn vue.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ttp55/vue-hello.git"
+  },
+  "author": "ttp55",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ttp55/vue-hello/issues"
+  },
+  "homepage": "https://github.com/ttp55/vue-hello#readme",
+  "dependencies": {
+    "vue": "^2.3.3"
+  }
+}
