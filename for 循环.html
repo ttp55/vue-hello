@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="value in object">
+                {{value}}
+            </li>
+        </ul>
+<!--v-for 可以通过一个对象的属性来迭代数据-->
+        <script>
+            new Vue({
+                el:'#app',
+                data:{
+                    object:{
+                        name:'hao',
+                        url:'http://google.com',
+                        slogan:'学习Vue!'
+                    }
+                }
+            })
+        </script>
+    </div>
+</body>
+</html>

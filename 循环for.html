@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <ol>
+            <li v-for="site in sites">
+                {{site.name}}
+            </li>
+        </ol>
+    </div>
+<!--v-for 指令需要以 item in items 形式的特殊语法， items 是源数据数组并且 item 是数组元素迭代的别名。
+v-for 可以绑定数据到数组来渲染一个列表：-->
+    <script>
+        new Vue({
+            el:'#app',
+            data:{
+                sites:[
+                    {name:'hao'},
+                    {name:'Hao'},
+                    {name:'haohao'}
+                ]
+            }
+        })
+    </script>
+</body>
+</html>

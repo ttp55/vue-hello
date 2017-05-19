@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+<body>
+<div id="app">
+    <ul>
+        <li v-for="(value, key) in object">
+            {{ key }} : {{ value }}
+        </li>
+    </ul>
+</div>
+<!--你也可以提供第二个的参数为键名-->
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            object: {
+                name: 'yes',
+                url: 'http://google.com',
+                slogan: '学linux！'
+            }
+        }
+    })
+</script>
+</body>
+</html>
