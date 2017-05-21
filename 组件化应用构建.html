@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <ol>
+            <!--现在我们为txwhtodo－item提供待办项对象-->
+            <!--待办项对象是变量，即其内容可以是动态的-->
+            <todo-item v-for="item in groceryList" v-bind:todo="item"></todo-item>
+        </ol>
+    </div>
+
+    <script>
+        Vue.component('todo-item',{
+            props:['todo'],
+            template:'<li>{{todo.text}}</li>>'
+        })
+
+        var app = new Vue({
+            el:'#app',
+            data:{
+                groceryList:[
+                    {text:'Hao'},
+                    {text:'hao'},
+                    {text:'so good'}
+                ]
+            }
+        })
+    </script>
+</body>
+</html>
